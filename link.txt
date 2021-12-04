@@ -1,1 +1,1 @@
-https://teachablemachine.withgoogle.com/models/UvXe47PUX/
+https://teachablemachine.withgoogle.com/models/u02fOYRBx/model.json

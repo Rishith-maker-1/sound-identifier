@@ -1,5 +1,12 @@
-console.log('ml5 version' , ml5.version);
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/P0QvZmgcB/model.json' , modelLoaded);
-function modelLoaded() {
-    console.log('modelLoaded');
+function start(){
+    navigator.mediaDevices.getUserMedia({
+        audio:true
+    });
+    classifier=ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/kA4F-80yW/model.json',modelReady);
+}
+function modelReady(){
+    classifier.classify(gotResults);
+}
+function gotResults(error,results){
+    console.log('gotResults');
 }
