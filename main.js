@@ -17,7 +17,7 @@ function gotResults(error,results){
         b= Math.floor(Math.random()*255)+1
         document.getElementById("resultLabel").innerHTML='I can hear - '+results[0].label;
         document.getElementById("resultLabel").style.color="rgb("+r+","+g+","+b+")";
-        img = document.getElementById('alien1');
+        img = document.getElementById('img');
         if(results[0].label =="Meowing"){
             img.src='https://cdn.dribbble.com/users/2035338/screenshots/11193887/motion_cat_still_2x.gif?compress=1&resize=400x300';
         }
